@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,
+body{
+    font-family: 'Raleway', sans-serif;
+    color: #808080;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    color: #666666;
+    display: block;
+    line-height: 1.9rem;
+    
+}
+.clearfix{
+    clear: both;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+/*--- Navigation ---*/
+.navbar{
+    background: #000;
+}
+.navbar .collapse .navbar-nav .nav-item a{
+    text-transform: uppercase;
+}
+.navbar .collapse .navbar-nav .nav-item a:hover{
+    color: #FDCD3B !important;
+}
+.navbar .collapse .navbar-nav .nav-item.active a{
+    color: #FDCD3B !important;
+}
+.navbar-brand.h1{
+    display: inline-block;
+    height: auto;
+    white-space: nowrap;
+    font-size: 3rem;
+    cursor: pointer;
+    font-weight: 900;  
+    color: #FDCD3B !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.2s 0.3s, background-color 0.3s ease-in-out, width 0.3s 0s; 
+}
+.navbar-brand i{
+    font-size: 1.3rem;
+}
+
+/*--banner image--*/
+.banner-image{
+    background: url('../img/b1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    flex-flow: column;
+    justify-content: center;
+}
+.banner-image h1{
+    color: #d9d9d9;
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 1%;
+    letter-spacing: 3px;
+}
+.banner-image h4{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #a6a6a6;
+    letter-spacing: 2px;
+    margin: 1% 0;
+}
+.skills{
+    color: #d9d9d9;
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
+}
+.banner-image i{
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 1%;
+}
+.button{
+    display: inline-block;
+    height: auto;
+    width: 14em;
+    line-height: 4.0rem;
+    border-radius: 5em;
+    color: #404040;
+    margin-top: 1%;
+    border: 2px solid #FDCD3B;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: #FDCD3B;
+    text-transform: uppercase;
+    font-weight: 800;  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.2s 0.3s, background-color 0.3s ease-in-out, width 0.3s 0s; 
+}
+.button:hover{
+    text-decoration: none;
+    border-radius: 5em;
+    background: transparent;
+    color: #FDCD3B;
+
+}
+/*-- About me---*/
+.about-me{
+    padding: 100px 0;
+    text-align: center;
+}
+.header-top h1{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #404040;
+    font-weight: 900;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.header-top h1:after{
+ content:'';
+  display:block;
+  height:0.2em;
+  width:50px;
+  margin:auto;
+  border-bottom:solid;
+  padding-top: 2%;
+  color: #FDCD3B;
+ }
+.about-me .first-one{
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+
+.about-me .button{
+    display: inline-block;
+    height: auto;
+    width: 15em;
+    line-height: 4.0rem;
+    border-radius: 5em;
+    text-transform: normal;
+    color: #404040;
+    margin-top: 1%;
+    border: 2px solid #FDCD3B;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: transparent;
+    font-weight: 800;  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.2s 0.3s, background-color 0.3s ease-in-out, width 0.3s 0s; 
+ }
+ .about-me .button:hover{
+    background: #FDCD3B;
+    text-decoration: none;
+    color: #000;
+ }
+
+/*--- Parallax----*/
+.parallax{
+    background: url(../img/banner-myself.jpg) no-repeat fixed 100%;
+    background-size: cover;
+    text-align: center;
+}
+.parallax-inner{
+    padding-top: 17%;
+    padding-bottom: 10%;
+}
+/*--- Services ----*/
+
+.services{
+    padding: 100px 0;
+    text-align: center;
+}
+.services .row,
+.portfolio .row{
+    margin-top: 5%;
+}
+section#services:focus {
+    outline: none
+}
+.services i{
+    font-size: 4rem;
+    color: #FDCD3B;
+    margin-bottom: 4%;
+    background: #000;
+    padding: 30px 30px;
+    border-radius: 50%;
+}
+.services h3{
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 2rem;
+    color: #333333;
+}
+/*---Portfolio---*/
+
+.portfolio{
+    background: #f1f0ed;
+    padding: 100px 0;
+}
+.portfolio .one{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #666666;
+    padding-bottom: 3px;
+    margin-left: 80px;
+}
+section#portfolio:focus {
+    outline: none
+}
+
+.portfolio .one-1{
+    font-size: 1.5rem;
+    color: #808080;
+    margin-left: 80px;
+    font-weight: normal;
+}
+.portfolio .one-2{
+    font-size: 1.4rem;
+    margin-left: 80px;
+    font-weight: normal;
+    color: #808080;
+}
+.right-col{
+    margin-top: 100px;
+}
+/*---- Footer end----*/
+
+.footer_end{
+    width: 100%;
+    background: #FDCD3B;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+}
+#contact:focus {
+    outline: none
+}
+.footer_end h2{
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #404040;
+}
+.footer_end p{
+    text-align: center;
+    color: #595959;
+    padding: 2% 0;
+}
+.footer_end a{
+    display: inline-block;
+    height: auto;
+    width: 15em;
+    line-height: 4.0rem;
+    border-radius: 5em;
+    color: #2A3A3F;
+    border: 2px solid #2A3A3F;
+    white-space: nowrap;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #FDCD3B;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.2s 0.3s, background-color 0.3s ease-in-out, width 0.3s 0s; 
+   
+}
+.footer_end a:hover{
+    text-decoration: none;
+    border-radius: 5em;
+    background: #2A3A3F;
+    color: #FDCD3B;
+}
+footer{
+    width: 100%;
+    padding: 100px 0;
+    background: #2A3A3F;
+    text-align: center;
+    color: #d9d9d9;
+    overflow: hidden;
+}
+footer h2{
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    color: #a6a6a6;
+}
+footer h2:after{
+  content:'';
+  display:block;
+  height:0.2rem;
+  width:50px;
+  margin:auto;
+  border-bottom:solid;
+  padding-top: 2rem;
+  color: #FDCD3B;
+}
+ 
+ 
+footer h3{
+    font-size: 1.3em;
+    letter-spacing: 4px;
+    color: #999999;
+    margin: 2%;
+}
+footer .logo-last h1:hover{
+    color: #FDCD3B;
+    background: #2A3A3F;
+    text-decoration: none;
+}
+footer .logo-last a:hover{
+    text-decoration: none;
+}
+
+footer p{
+    text-align: center;
+     color: #b3b3b3;
+     margin: 0 auto;
+     margin-top: 2%;
+}
+.social li{
+    margin: 0 auto;
+    text-align: center;
+    margin: 5px 20px;
+    border-radius: 50%;
+    border: 2px solid #FDCD3B;
+    display: inline-block;
+    background: #FDCD3B;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color 0.2s 0.3s, background-color 0.3s ease-in-out, width 0.3s 0s;
+}
+.social li:hover{
+    background: #2A3A3F;
+    color: #FDCD3B;
+    border: 2px solid #FDCD3B;
+}
+.social i{
+    font-size: 1.6rem;
+    color: #404040;
+    width: 35px;
+    height: 35px;
+    padding-top: 10px;
+    
+}
+.social i:hover{
+    color: #FDCD3B;
+}
+
+.last{
+    margin-right: 30px;
+    float: right;
+    padding: 5px 5px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    background: #737373;
+    color: #a6a6a6;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    font-size: 1rem;
+}
+.last:hover{
+    background: #999999;
+    color: #595959;
+}
+/*-- Meida Quiries --*/
+@media screen and (max-width: 768px){
+    
+    .banner-image h1{
+        font-size: 1.4rem;
+       
+    }
+    .banner-image h4{
+        font-size: 1.2rem;
+    }
+    .skills{
+        font-size: 1.7rem;
+        margin: 20px;
+    }
+    .banner-image i{
+        font-size: 2rem;
+    }
+    .button{
+        width: 12em;
+        font-size: 1.2rem;
+        
+    }
+    p{
+        font-size: 1.2rem;    
+    }
+    .header-top h1{
+        font-size: 2.5rem;
+    }
+    .about-me .button{
+        margin-top: 30px;
+     }
+     .footer_end h2{
+        font-size: 1.5rem;
+    }
+    .footer_end a{
+        width: 10em;
+        font-size: 1em;
+    }
+    footer h2{
+        font-size: 1.4rem;
+    }
+    footer h3{
+        font-size: 1rem;
+        margin: 25px 0;
+    }
+    .last{
+        float: right;
+        padding: 3px 3px;
+        font-size: 0.7rem;
+    }
+    
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
